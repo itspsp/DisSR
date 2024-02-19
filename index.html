@@ -14,7 +14,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="alternate" href="index.xml" type="application/rss+xml" title="Speech Research">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-  <title>AudioLDM: Text-to-Audio Generation with Latent Diffusion Models - Speech Research</title>
+  <title>DisSR: Disentangling Speech Representation for Degradation-Prior Guided Cross-Domain Speech Restoration</title>
 </head>
 
 <body rightmargin="150" leftmargin="150" topmargin="100" bottommargin="100" line-height:160%>
@@ -29,22 +29,18 @@
         <article itemscope itemtype="https://schema.org/BlogPosting">
           <br></br>
           <h1 itemprop="headline" align="center">
-            <font color="000093" size="7">AudioLDM: Text-to-Audio Generation with <br>Latent Diffusion Models</br>
+            <font color="000093" size="7">DisSR: Disentangling Speech Representation for Degradation-Prior Guided Cross-Domain Speech Restoration</br>
             </font>
           </h1>
           <br></br>
           <p style="line-height:1" align="center"><b>
-              <font color="061E61">Haohe Liu<sup>*1</sup>, Zehua Chen<sup>*2</sup>, Yi Yuan<sup>1</sup>, Xinhao
-                Mei<sup>1</sup>, Xubo Liu<sup>1</sup></font>
-            </b></p>
-          <p style="line-height:1" align="center"><b>
-              <font color="061E61">Danilo Mandic<sup>2</sup>, Wenwu Wang<sup>1</sup>, Mark D. Plumley<sup>1</sup></font>
+              <font color="061E61">Ziqi Liang<sup>*1,2</sup>, Xulong Zhang<sup>*1</sup>, Jianzong Wang<sup>1</sup>, Ning Cheng<sup>1</sup>, Jing Xiao<sup>1</sup></font>
             </b></p>
           <p style="line-height:0.6" align="center">
-            <font color="061E61"><sup>1</sup>CVSSP, University of Surrey, Guildford, UK</font>
+            <font color="061E61"><sup>1</sup>Ping An Technology (Shenzhen) Co., Ltd., Shenzhen, China</font>
           </p>
           <p style="line-height:0.6" align="center">
-            <font color="061E61"> <sup>2</sup>Department of EEE, Imperial College London, London, UK</font>
+            <font color="061E61"> <sup>2</sup>University of Science and Technology of China, Hefei, China</font>
           </p>
           <p style="line-height:1" align="center">
             <font color="061E61"><sup>*</sup>Equal Contribution</font>
@@ -53,29 +49,23 @@
             <br>
             <div class="container">
               <center>
-                <p><a href="https://arxiv.org/abs/2301.12503">[Paper on ArXiv]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/haoheliu/AudioLDM">[Code on GitHub]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://huggingface.co/spaces/haoheliu/audioldm-text-to-audio-generation">[Hugging Face Space]</a></p>
+                <p><a href="https://itspsp.github.io/DisSR/">[Paper on ArXiv]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/itspsp/DisSR-main">[Code on GitHub]</a></p>
               </center>
             </div>
             <h2 id="abstract">
               <font color="000093">Abstract</font>
             </h2>
             <p style="text-align: justify;">
-              <font color="061E61"> Text-to-audio (TTA) system has recently gained attention for its ability to
-                synthesize general audio based on text descriptions.
-                However, previous studies in TTA have limited generation quality with high computational costs.
-                In this study, we propose AudioLDM, a TTA system that is built on a latent space to learn the continuous
-                audio representations from contrastive language-audio pretraining (CLAP) latents.
-                The pretrained CLAP models enable us to train latent diffusion models (LDMs) with audio embedding while providing text embedding
-                as a condition during sampling.
-                By learning the latent representations of audio signals and their compositions without modeling the
-                cross-modal relationship, AudioLDM is advantageous in both generation quality and computational
-                efficiency.
-                Trained on AudioCaps with a single GPU, AudioLDM achieves state-of-the-art TTA performance measured by
-                both objective and subjective metrics (e.g., frechet distance). Moreover, AudioLDM is the first TTA
-                system that enables various text-guided audio manipulations (e.g., style transfer) in a zero-shot
-                fashion. </font>
+              <font color="061E61"> Speech Restoration aims to remove distortions in speech signals. 
+                Prior methods often use artificial paired data created by applying various distortions to high-quality speech corpora, it can not sufficiently represent acoustic distortions of real data, limiting the applicability. In addition, most studies ignore the problem of model generalization across unseen domains.
+To overcome those limitations, we propose a general cross-domain Speech Restoration model with Degradation Prior Guidance, which can extract speaker-invariant representation as degradation prior to guide the speech restoration model to generate high-quality speech. 
+In addition, we propose an optimization strategy to enhance the adaptability and robustness of the restoration model in different environments.
+                Experiments show that our method can generate high-quality restored speech under a variety of distortion conditions.
+                
+                </font>
             </p>
 
+            <!--
             <h2 id="note">
               <font color="000093">Note</font>
             </h2>
@@ -89,7 +79,8 @@
               <font color="061E61"> AudioLDM enables zero-shot text-guided audio style-transfer, inpainting, and
                 super-resolution.</font>
             </li>
-
+            -->
+            
             <br></br>
             <figure>
               <p align="center"><img src="DisSR.png" width="100%" class="center" /></p>
