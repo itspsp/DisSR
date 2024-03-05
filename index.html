@@ -175,13 +175,10 @@ In addition, we propose an optimization strategy to enhance the adaptability and
                       <source src="output/band-limited/wav/jsut/0-input.wav" autoplay />Your browser does not
                       support the audio element.
                     </audio></th>
-                </tr>
-                <tr>
                   <th scope="row"><audio controls="controls">
                       <source src="output/band-limited/wav/vctk/0-vf.wav" autoplay />Your browser does
                       not support the audio element.
                     </audio></th>
-                </tr>
                   <th scope="row"><audio controls="controls">
                       <source src="output/band-limited/wav/jsut/0-self.wav" autoplay />Your browser does not support
                       the audio element.
@@ -197,11 +194,11 @@ In addition, we propose an optimization strategy to enhance the adaptability and
                 </tr>
                 
                 <tr>
-                  <th scope="row"><img src="output/band-limited/fig/jsut/3-input.png" width="90%"></th>
-                  <th scope="row"><img src="output/band-limited/fig/vctk/3-vf.png" width="90%"></th>
-                  <th scope="row"><img src="output/band-limited/fig/jsut/3-self.png" width="90%"></th>
-                  <th scope="row"><img src="output/band-limited/fig/jsut/3-DisSR.png" width="90%"></th>
-                  <th scope="row"><img src="output/band-limited/fig/jsut/3-groundtruth.png" width="90%"></th>
+                  <th scope="row"><img src="output/band-limited/fig/jsut/3-input.png" width="100%"></th>
+                  <th scope="row"><img src="output/band-limited/fig/vctk/3-vf.png" width="100%"></th>
+                  <th scope="row"><img src="output/band-limited/fig/jsut/3-self.png" width="100%"></th>
+                  <th scope="row"><img src="output/band-limited/fig/jsut/3-DisSR.png" width="100%"></th>
+                  <th scope="row"><img src="output/band-limited/fig/jsut/3-groundtruth.png" width="100%"></th>
                 </tr>
                 <tr>
                   <th scope="row"><audio controls="controls">
@@ -225,32 +222,97 @@ In addition, we propose an optimization strategy to enhance the adaptability and
                       the audio element.
                     </audio></th>
                 </tr>
-                
+              </tbody>
+            </table>
+
+            <br></br>
+            <h2 id="Evaluation Results on Clipped (LibriTTS -> VCTK)">
+              <font color="000093">Evaluation Results on Clipped (LibriTTS -> VCTK)</font>
+            </h2>
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <thead>
                 <tr>
-
-                  <td><img src="samples/5_inpainting/audio_removed_png/YxQVmVBO8YJc.png" width="90%"></td>
-                  <td><img src="samples/5_inpainting/audio_inpainted_png/YxQVmVBO8YJc.png" width="90%"></td>
-                  <td><img src="samples/5_inpainting/gt_png/YxQVmVBO8YJc.png" width="90%"></td>
-
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">Original</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">VoiceFixer</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">SelfRemaster</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">DisSR</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">Ground-Truth</font>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="output/clipped/fig/jsut/0-input.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/vctk/0-vf.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/jsut/0-self.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/jsut/0-DisSR.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/jsut/0-groundtruth.png" width="100%"></th>
                 </tr>
                 <tr>
-
-                  <td><audio controls="controls">
-                      <source src="samples/5_inpainting/audio_removed/YxQVmVBO8YJc.wav" autoplay />Your browser does not
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/0-input.wav" autoplay />Your browser does not
                       support the audio element.
-                    </audio></td>
-                  <td><audio controls="controls">
-                      <source src="samples/5_inpainting/audio_inpainted/YxQVmVBO8YJc.wav" autoplay />Your browser does
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/vctk/0-vf.wav" autoplay />Your browser does
                       not support the audio element.
-                    </audio></td>
-                  <td><audio controls="controls">
-                      <source src="samples/5_inpainting/gt/YxQVmVBO8YJc.wav" autoplay />Your browser does not support
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/0-self.wav" autoplay />Your browser does not support
                       the audio element.
-                    </audio></td>
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/0-DisSR.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/0-groundtruth.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                </tr>
+                
+                <tr>
+                  <th scope="row"><img src="output/clipped/fig/jsut/1-input.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/vctk/1-vf.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/jsut/1-self.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/jsut/1-DisSR.png" width="100%"></th>
+                  <th scope="row"><img src="output/clipped/fig/jsut/1-groundtruth.png" width="100%"></th>
+                </tr>
+                <tr>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/1-input.wav" autoplay />Your browser does not
+                      support the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/vctk/1-vf.wav" autoplay />Your browser does
+                      not support the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/1-self.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/1-DisSR.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/clipped/wav/jsut/1-groundtruth.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
                 </tr>
               </tbody>
             </table>
 
+            
 
             <br></br>
             <h2 id="Text-Guided Audio Inpainting with Diverse Text Prompt">
