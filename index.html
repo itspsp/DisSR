@@ -365,25 +365,108 @@ In addition, we propose an optimization strategy to enhance the adaptability and
               </tbody>
             </table>
 
+            <br></br>
+            <h2 id="Evaluation Results on Overdrive distoration (LibriTTS -> VCTK)">
+              <font color="000093">Evaluation Results on Overdrive distoration (LibriTTS -> VCTK)</font>
+            </h2>
+            <table class="table" align="center" style="table-layout: fixed;word-break:break-word">
+              <thead>
+                <tr>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">Original</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">VoiceFixer</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">SelfRemaster</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">DisSR</font>
+                  </th>
+                  <th scope="col" width="30%" style="text-align: center;">
+                    <font color="061E61">Ground-Truth</font>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/1-input.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/vctk/1-vf.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/1-self.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/1-DisSR.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/1-groundtruth.png" width="100%"></th>
+                </tr>
+                <tr>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/1-input.wav" autoplay />Your browser does not
+                      support the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/vctk/1-vf.wav" autoplay />Your browser does
+                      not support the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/1-self.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/1-DisSR.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/1-groundtruth.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                </tr>
+                
+                <tr>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/2-input.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/vctk/2-vf.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/2-self.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/2-DisSR.png" width="100%"></th>
+                  <th scope="row"><img src="output/Overdrive/fig/jsut/2-groundtruth.png" width="100%"></th>
+                </tr>
+                <tr>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/2-input.wav" autoplay />Your browser does not
+                      support the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/vctk/2-vf.wav" autoplay />Your browser does
+                      not support the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/2-self.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/2-DisSR.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                  <th scope="row"><audio controls="controls">
+                      <source src="output/Overdrive/wav/jsut/2-groundtruth.wav" autoplay />Your browser does not support
+                      the audio element.
+                    </audio></th>
+                </tr>
+              </tbody>
+            </table>
+
             
-
-
-          
-
             </p>
 
-            
+  
             <hr>
             <h2 id="Other comments">
               <font color="000093">Other comments</font>
             </h2>
             <div class="container">
               <p>
-                1. We share <a href="https://github.com/haoheliu/audioldm_eval">our code for model evaluation on github</a>, which aims to unify audio generation model evaluation for easier comparison.
+                1. We share <a href="https://github.com/itspsp/DisSR-main">our code on github</a>, which aims to experimental reproduction and verification.
               </p>
               <p>
                 <!-- 2. We are double checking the copy-right issue on open-sourcing our pretrained model. This will not take too long. -->
-                2. We are confirming the data-related copyright issue, after which the pretrained models will be released.
+                2. We are internally confirming the copyright issues of the model and data, after which the pretrained models will be released.
               </p>
             </div>
           </section>
